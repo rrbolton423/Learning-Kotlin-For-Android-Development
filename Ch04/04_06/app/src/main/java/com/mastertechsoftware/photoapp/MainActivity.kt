@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     // Assign the response's body to the list in the MainActivity
                     this@MainActivity.photos = response?.body()?.hits
 
-                    // Create and instance of out MainAdapter, passing our
+                    // Create and instance of our MainAdapter, passing our
                     // list of photos, and the click listener
                     mainAdapter = MainAdapter(this@MainActivity.photos!!,
                             this@MainActivity)

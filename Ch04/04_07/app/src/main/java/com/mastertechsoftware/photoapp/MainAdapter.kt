@@ -30,9 +30,6 @@ class MainAdapter(var photos: List<Photo>,
         // Set the favorites field
         holder?.favorites?.text = photo.favorites.toString();
 
-        // Set the tags field
-        holder?.tags?.text = photo.tags
-
         // If the previewURL is not empty...
         if (photo.previewURL.isNotEmpty()) {
 
