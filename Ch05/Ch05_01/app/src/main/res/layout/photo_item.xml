@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="90dp">
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/photo_item"
+               android:scaleType="centerCrop"
+    />
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/main_view"
+    >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/title"
+                  android:textColor="@android:color/white"
+                  android:textSize="16sp"
+                  android:textStyle="bold"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_alignParentTop="false"
+                  android:layout_alignParentRight="true"
+        />
+        <ImageView android:layout_width="48dp" android:layout_height="48dp"
+                   android:id="@+id/avatar"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginRight="5dp"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/user"
+                  android:layout_toRightOf="@+id/avatar"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="5dp"
+                  android:textColor="@android:color/white"
+                  android:textSize="12sp"
+
+
+        />
+
+    </RelativeLayout>
+</FrameLayout>
